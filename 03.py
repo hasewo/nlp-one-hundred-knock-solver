@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-word1 = "パトカー"
-word2 = "タクシー"
-combine = ""
+sentence = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
+replace_sentence = sentence.replace(",", "").replace(".", "")
+split = replace_sentence.split(" ")
 
-for i, j in zip(word1, word2):
-    combine += i
-    combine += j
+len_list = []
 
-print(combine)
+for word in split:
+    len_list.append(len(word))
+
+print(len_list)
