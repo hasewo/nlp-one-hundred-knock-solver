@@ -8,7 +8,7 @@ def bigram(sentence, case):
             split = sentence.split(" ")
         elif case == "char":
             split = sentence.replace(" ", "")
-        
+        print(split)
         bigram = ''
         bigram_list = []
 
